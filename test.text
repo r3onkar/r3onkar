@@ -1,0 +1,16 @@
+Onkar@LAPTOP-S74ICSUC MINGW64 /e/GitTBW
+$ git branch
+fatal: not a git repository (or any of the parent directories): .git
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /e/GitTBW
+$ touch test.text
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /e/GitTBW
+$ start test.text
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /e/GitTBW
+$
+
+
+
+
