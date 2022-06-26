@@ -104,4 +104,46 @@ Onkar@LAPTOP-S74ICSUC MINGW64 /e/GitTBW (omibranch)
 $ start new.txt
 
 Onkar@LAPTOP-S74ICSUC MINGW64 /e/GitTBW (omibranch)
-$
+$ git add new.txt
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /e/GitTBW (omibranch)
+$ git status
+On branch omibranch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   new.txt
+
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /e/GitTBW (omibranch)
+$ git commit -m "second new text file"
+[omibranch 9d352cd] second new text file
+ 1 file changed, 107 insertions(+)
+ create mode 100644 new.txt
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /e/GitTBW (omibranch)
+$ git push omibranch
+fatal: 'omibranch' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /e/GitTBW (omibranch)
+$ git push origin omibranch
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.00 KiB | 1.00 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'omibranch' on GitHub by visiting:
+remote:      https://github.com/r3onkar/r3onkar/pull/new/omibranch
+remote:
+To https://github.com/r3onkar/r3onkar.git
+ * [new branch]      omibranch -> omibranch
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /e/GitTBW (omibranch)
+$ start new.txt
+
+
