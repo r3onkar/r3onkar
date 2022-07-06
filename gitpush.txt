@@ -1,0 +1,134 @@
+Dhananjay@DESKTOP-VOO7S3S MINGW64 /f/GIT_java/r3onkar (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Dhananjay@DESKTOP-VOO7S3S MINGW64 /f/GIT_java/r3onkar (master)
+$ git branch dhananjay
+
+Dhananjay@DESKTOP-VOO7S3S MINGW64 /f/GIT_java/r3onkar (master)
+$ git branch
+  dhananjay
+* master
+
+Dhananjay@DESKTOP-VOO7S3S MINGW64 /f/GIT_java/r3onkar (master)
+$ git checkout dhananjay
+Switched to branch 'dhananjay'
+
+Dhananjay@DESKTOP-VOO7S3S MINGW64 /f/GIT_java/r3onkar (dhananjay)
+$ touch ab.txt
+
+Dhananjay@DESKTOP-VOO7S3S MINGW64 /f/GIT_java/r3onkar (dhananjay)
+$ start ab.txt
+
+Dhananjay@DESKTOP-VOO7S3S MINGW64 /f/GIT_java/r3onkar (dhananjay)
+$ ^C
+
+Dhananjay@DESKTOP-VOO7S3S MINGW64 /f/GIT_java/r3onkar (dhananjay)
+$ ^C
+
+Dhananjay@DESKTOP-VOO7S3S MINGW64 /f/GIT_java/r3onkar (dhananjay)
+$ git status
+On branch dhananjay
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ab.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Dhananjay@DESKTOP-VOO7S3S MINGW64 /f/GIT_java/r3onkar (dhananjay)
+$ git add ab.txt
+
+Dhananjay@DESKTOP-VOO7S3S MINGW64 /f/GIT_java/r3onkar (dhananjay)
+$ git commit -m "message"
+[dhananjay f484a05] message
+ 1 file changed, 31 insertions(+)
+ create mode 100644 ab.txt
+
+Dhananjay@DESKTOP-VOO7S3S MINGW64 /f/GIT_java/r3onkar (dhananjay)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Dhananjay@DESKTOP-VOO7S3S MINGW64 /f/GIT_java/r3onkar (master)
+$ git merge dhananjay
+Updating 58bb8aa..f484a05
+Fast-forward
+ ab.txt | 31 +++++++++++++++++++++++++++++++
+ 1 file changed, 31 insertions(+)
+ create mode 100644 ab.txt
+
+Dhananjay@DESKTOP-VOO7S3S MINGW64 /f/GIT_java/r3onkar (master)
+$ git remote add origin https://github.com/r3onkar/r3onkar.git
+error: remote origin already exists.
+
+Dhananjay@DESKTOP-VOO7S3S MINGW64 /f/GIT_java/r3onkar (master)
+$ git remote -v
+origin  https://github.com/r3onkar/r3onkar.git (fetch)
+origin  https://github.com/r3onkar/r3onkar.git (push)
+
+Dhananjay@DESKTOP-VOO7S3S MINGW64 /f/GIT_java/r3onkar (master)
+$ git commit -m "hh 1"
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Dhananjay@DESKTOP-VOO7S3S MINGW64 /f/GIT_java/r3onkar (master)
+$ git push origin master
+remote: Permission to r3onkar/r3onkar.git denied to BardeDhananjay.
+fatal: unable to access 'https://github.com/r3onkar/r3onkar.git/': The requested URL returned error: 403
+
+Dhananjay@DESKTOP-VOO7S3S MINGW64 /f/GIT_java/r3onkar (master)
+$ git push origin master
+remote: Permission to r3onkar/r3onkar.git denied to BardeDhananjay.
+fatal: unable to access 'https://github.com/r3onkar/r3onkar.git/': The requested URL returned error: 403
+
+Dhananjay@DESKTOP-VOO7S3S MINGW64 /f/GIT_java/r3onkar (master)
+$ git push origin master
+remote: Permission to r3onkar/r3onkar.git denied to BardeDhananjay.
+fatal: unable to access 'https://github.com/r3onkar/r3onkar.git/': The requested URL returned error: 403
+
+Dhananjay@DESKTOP-VOO7S3S MINGW64 /f/GIT_java/r3onkar (master)
+$ git push origin master
+remote: Permission to r3onkar/r3onkar.git denied to BardeDhananjay.
+fatal: unable to access 'https://github.com/r3onkar/r3onkar.git/': The requested URL returned error: 403
+
+Dhananjay@DESKTOP-VOO7S3S MINGW64 /f/GIT_java/r3onkar (master)
+$ ^C
+
+Dhananjay@DESKTOP-VOO7S3S MINGW64 /f/GIT_java/r3onkar (master)
+$ git push origin master
+remote: Permission to r3onkar/r3onkar.git denied to BardeDhananjay.
+fatal: unable to access 'https://github.com/r3onkar/r3onkar.git/': The requested URL returned error: 403
+
+Dhananjay@DESKTOP-VOO7S3S MINGW64 /f/GIT_java/r3onkar (master)
+$ git push origin master
+fatal: helper error (-1): User cancelled dialog.
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/r3onkar/r3onkar.git/'
+
+Dhananjay@DESKTOP-VOO7S3S MINGW64 /f/GIT_java/r3onkar (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 501 bytes | 250.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/r3onkar/r3onkar.git
+   58bb8aa..f484a05  master -> master
+branch 'master' set up to track 'origin/master'.
+
+Dhananjay@DESKTOP-VOO7S3S MINGW64 /f/GIT_java/r3onkar (master)
+$ touch gitpush.txt
+
+Dhananjay@DESKTOP-VOO7S3S MINGW64 /f/GIT_java/r3onkar (master)
+$ start gitpush.txt
+
+Dhananjay@DESKTOP-VOO7S3S MINGW64 /f/GIT_java/r3onkar (master)
+$
