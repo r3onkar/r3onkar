@@ -1,0 +1,33 @@
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /e/GitTBW (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /e/GitTBW (master)
+$ git diff
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /e/GitTBW (master)
+$ git checkout omibranch
+Switched to branch 'omibranch'
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /e/GitTBW (omibranch)
+$ git status
+On branch omibranch
+nothing to commit, working tree clean
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /e/GitTBW (omibranch)
+$ git diff
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /e/GitTBW (omibranch)
+$ touch gitdiff.txt
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /e/GitTBW (omibranch)
+$ start gitdiff.txt
+
+Onkar@LAPTOP-S74ICSUC MINGW64 /e/GitTBW (omibranch)
+$
+
+
+git ignore created
+
